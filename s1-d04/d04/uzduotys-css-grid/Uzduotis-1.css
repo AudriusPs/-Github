@@ -1,0 +1,66 @@
+html, body {
+    background-color: #ffeead;
+    margin: 10px;
+}
+
+
+.container {
+    border-radius: 1px;
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 40px 40px 40px;
+    grid-template-areas: 
+        "r r b b"
+        "g p p p"
+        "y y y y"
+}
+
+.red {
+    grid-area: r;
+}
+
+.blue {
+    grid-area: b;
+}
+
+.green {
+    grid-area: g;
+}
+
+.purple {
+    grid-area: p;
+}
+
+
+.yellow {
+    grid-area: y;
+}
+
+
+.container > div {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #f8eba5;
+    text-transform: uppercase;
+}
+
+.red {
+    background-color: #ff0000;
+}
+.blue {
+    background-color: #2700b2;
+}
+.green {
+    background-color: #007611;
+}
+.purple {
+    background-color: #870077;
+}
+.yellow {
+    background-color: fee600;
+}

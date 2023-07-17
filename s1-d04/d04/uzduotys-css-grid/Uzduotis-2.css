@@ -1,0 +1,66 @@
+html, body {
+    background-color: #ffeead;
+    margin: 10px;
+}
+
+
+.container {
+    border-radius: 1px;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+        "r r r r"
+        "b b g g"
+        "b b p p-2"
+}
+
+.red {
+    grid-area: r;
+}
+
+.blue {
+    grid-area: b;
+}
+
+.green {
+    grid-area: g;
+}
+
+.purple-1 {
+    grid-area: p;
+}
+
+
+.purple-2 {
+    grid-area: p-2;
+}
+
+
+.container > div {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #f8eba5;
+    text-transform: uppercase;
+}
+
+.red {
+    background-color: #ff0000;
+}
+.blue {
+    background-color: #2700b2;
+}
+.green {
+    background-color: #007611;
+}
+.purple-1 {
+    background-color: #870077;
+}
+.purple-2 {
+    background-color: #870077;
+}
